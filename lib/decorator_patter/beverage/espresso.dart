@@ -1,12 +1,22 @@
 import 'package:code_examples_of_design_patterns/decorator_patter/beverage/beverage.dart';
+import 'package:code_examples_of_design_patterns/decorator_patter/size/beverage_size.dart';
 
 class Espresso extends Beverage {
-  Espresso() {
+  BeverageSize _size;
+  Espresso(this._size) {
     description = "Espresso";
   }
 
   @override
   double cost() {
-    return 1.99;
+    return 3 + _size.cost;
+  }
+
+  @override
+  BeverageSize getSize() => _size;
+
+  @override
+  void setSize(BeverageSize size) {
+    _size = size;
   }
 }
