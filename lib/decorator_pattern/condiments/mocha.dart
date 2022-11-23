@@ -1,6 +1,6 @@
-import 'package:code_examples_of_design_patterns/decorator_patter/beverage/beverage.dart';
-import 'package:code_examples_of_design_patterns/decorator_patter/condiments/condiment_decorator.dart';
-import 'package:code_examples_of_design_patterns/decorator_patter/size/beverage_size.dart';
+import 'package:code_examples_of_design_patterns/decorator_pattern/beverage/beverage.dart';
+import 'package:code_examples_of_design_patterns/decorator_pattern/condiments/condiment_decorator.dart';
+import 'package:code_examples_of_design_patterns/decorator_pattern/size/beverage_size.dart';
 
 class Mocha extends CondimentDecorator {
   late Beverage _beverage;
