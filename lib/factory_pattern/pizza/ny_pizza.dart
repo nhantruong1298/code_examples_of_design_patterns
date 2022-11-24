@@ -1,12 +1,11 @@
+import 'package:code_examples_of_design_patterns/factory_pattern/ingredient/pizza_ingredient_factory.dart';
 import 'package:code_examples_of_design_patterns/factory_pattern/pizza/pizza.dart';
 
 class NYStyleCheesePizza extends Pizza {
-  NYStyleCheesePizza() {
+  NYStyleCheesePizza(PizzaIngredientFactory pizzaIngredientFactory) {
     name = 'Cheese pizza';
-    dough = 'Thin Crust Dough';
-    sauce = 'Marinara Sauce';
-
     toppings.add('Grated Reggiano Cheese');
+    pizzaIngredientFactory = pizzaIngredientFactory;
   }
 }
 
