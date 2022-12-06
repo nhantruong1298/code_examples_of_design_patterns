@@ -3,7 +3,7 @@ class ChocolateBoiler {
   static ChocolateBoiler getInstance() => _instance;
   static final ChocolateBoiler _instance = ChocolateBoiler._internal();
 
-//* Lazy instantiation *
+//* Another way with lazy instantiation *
 //static ChocolateBoiler? _instance;
 // static ChocolateBoiler getInstance() {
 //     _instance ??= ChocolateBoiler._internal();
